@@ -7,7 +7,7 @@
 console.log('Mensagem enviada pelo console')
 console.log('Mensagem enviada pelo console')
 console.log('Mensagem enviada pelo console')
- */
+ 
 
 //Aula sobre variáveis
 var latitude = 40.87663;
@@ -58,5 +58,13 @@ var vtype = 'teste';
 console.log(typeof vtype)
 
 var typede;
-console.log(typeof typede)
+console.log(typeof typede)*/
 
+
+/*var conteudo_caixa = document.getElementById("caixa_azul").innerHTML;
+
+console.log(conteudo_caixa)
+
+document.getElementById("caixa_amarela").innerHTML = conteudo_caixa*/
+
+//document.getElementById("caixa_amarela").innerHTML = '<h1>' + 'Caixa Amarela' + '</h1>';
