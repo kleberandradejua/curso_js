@@ -60,6 +60,7 @@ console.log(typeof vtype)
 var typede;
 console.log(typeof typede)*/
 
+//Trabalhando com o DOM
 
 /*var conteudo_caixa = document.getElementById("caixa_azul").innerHTML;
 
@@ -68,3 +69,51 @@ console.log(conteudo_caixa)
 document.getElementById("caixa_amarela").innerHTML = conteudo_caixa*/
 
 //document.getElementById("caixa_amarela").innerHTML = '<h1>' + 'Caixa Amarela' + '</h1>';
+
+// Função
+
+/*function soma(){
+    var x = 7;
+    var y = 9;
+    var soma = x+y;
+    console.log(soma)
+}
+
+soma()
+
+function soma_args(num1, num2){
+    let soma = num1 + num2;
+    //console.log(soma)
+    return soma;
+}
+
+console.log(soma_args(87.4, 37.2))*/
+
+//desafio -> função imc
+
+/*function calc_imc(){
+    let peso = document.getElementById("peso").innerHTML;
+    let altura = document.getElementById("altura").innerHTML;
+    let imc = peso / (altura*altura);    
+
+    return imc;    
+}
+
+document.getElementById("imc").innerHTML = calc_imc();*/
+
+function vlr_imc(peso, altura){
+    let imc = peso/ (altura * altura)
+    return imc;
+}
+
+let get_peso = parseFloat(document.getElementById("peso").innerHTML);
+let get_altura = parseFloat(document.getElementById("altura").innerHTML);
+
+console.log(typeof get_peso)
+
+let print_imc = vlr_imc(get_peso, get_altura)
+
+document.getElementById("imc").innerHTML = print_imc.toFixed(2)
+
+
+
